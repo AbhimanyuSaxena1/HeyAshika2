@@ -31,25 +31,25 @@ function Cards() {
         style={{ filter: 'blur(10px)' }}
       />
       <h1
-        className={`${val === false ? "text-[#f75590]" : "text-[#FCE4DB]"} z-20 text-7xl stroke-black font-["Salita"] absolute top-[13%] lg:top-[20%] lg:text-8xl lg:left-[10%]`} 
-        style={{ textShadow: `${val === false ? '2px 2px 0 #FCE4DB, -2px -2px 0 #FCE4DB' : '2px 2px 0 #f75590, -2px -2px 0 #f75590'}` }}
+        className={`${val === false ? "text-[#F991CC]" : "text-[#FFDAFC]"} z-20 text-7xl stroke-black font-["Salita"] absolute top-[13%] lg:top-[20%] lg:text-8xl lg:left-[10%]`} 
+        style={{ textShadow: `${val === false ? '2px 2px 0 #FFDAFC, -2px -2px 0 #FFDAFC' : '2px 2px 0 #F991CC, -2px -2px 0 #F991CC'}` }}
       >
         Hey
       </h1>
       <h1
-        className={`${val === false ? "text-[#FCE4DB]" : "text-[#f75590]"} z-20 text-8xl rounded-full font-["Salita"] absolute top-[20%] lg:top-[30%] lg:text-9xl lg:left-[10%]`}
-        style={{ textShadow: `${val === false ? '2px 2px 0 #f75590, -2px -2px 0 #f75590' : '2px 2px 0 #FCE4DB, -2px -2px 0 #FCE4DB'}` }}
+        className={`${val === false ? "text-[#FFDAFC]" : "text-[#F991CC]"} z-20 text-8xl rounded-full font-["Salita"] absolute top-[20%] lg:top-[30%] lg:text-9xl lg:left-[10%]`}
+        style={{ textShadow: `${val === false ? '2px 2px 0 #F991CC, -2px -2px 0 #F991CC' : '2px 2px 0 #FFDAFC, -2px -2px 0 #FFDAFC'}` }}
       >
         Palak
       </h1>
       <h1
-        className={`${val === false ? "text-[#FCE4DB]" : "text-[#f75590]"} z-20 text-4xl rounded-full font-["Salita"] absolute bottom-[20%] lg:top-[45%] lg:text-4xl lg:left-[10%]`}
+        className={`${val === false ? "text-[#FFDAFC]" : "text-[#F991CC]"} z-20 text-4xl rounded-full font-["Salita"] absolute bottom-[20%] lg:top-[45%] lg:text-4xl lg:left-[10%]`}
       >
         I love you so much❤️
       </h1>
       <div
         className={`rounded-xl w-75 h-100 ${
-          val === false ? "border-[#f75590]" : "border-[#FCE4DB]"
+          val === false ? "border-[#F991CC]" : "border-[#FFDAFC]"
         } border-6 border-dashed relative overflow-hidden flex justify-center items-center`}
       >
         <div
