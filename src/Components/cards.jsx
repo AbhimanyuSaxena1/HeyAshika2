@@ -73,7 +73,7 @@ function Cards() {
           style={{ textShadow: `2px 2px 5px ${shadowColor}, -2px -2px 5px ${shadowColor}` }}
         >
           Pehle jese the wese hojaye🫴 <br />
-          please ajana mohmaya me wapas meri🥺
+          please ajana meri mohmaya me wapas 🥺
         </h1>
       )}
       <div className={`rounded-xl w-75 h-100 ${val === false ? "border-[#f75590]" : "border-[#FCE4DB]"} border-6 border-dashed relative overflow-hidden flex justify-center items-center`} style={{ boxShadow: `0 0 15px 5px ${val === false ? '#FCE4DB' : '#f75590'}` }}>
