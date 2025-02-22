@@ -6,10 +6,23 @@ import img3 from "../assets/img3.jpg";
 import img4 from "../assets/img4.jpg";
 import ILY from "../assets/ILY.mp3";
 
+const Tooltip = ({ text, visible, backgroundColor, textColor }) => {
+  return (
+    <div 
+      className={`absolute -top-20 left-1/2 transform -translate-x-1/2 py-1 px-3 rounded-xl transition-opacity duration-300 ${visible ? 'opacity-95 animate-bounce' : 'opacity-0'}`}
+      style={{ backgroundColor, color: textColor }}
+    >
+      {text}
+      <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-black rotate-45" style={{ backgroundColor }}></div>
+    </div>
+  );
+};
+
 function Cards() {
   const [val, setVal] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [shadowColor, setShadowColor] = useState("#f75590");
+  const [showTooltip, setShowTooltip] = useState(true);
   const images = [img1, img2, img3, img4];
   const audioRef = useRef(null);
 
@@ -21,7 +34,11 @@ function Cards() {
       audioRef.current.play();
     }
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setShowTooltip(false);
   };
+
+  const tooltipBackgroundColor = val === false ? "#f991cc" : "#ffdafc";
+  const tooltipTextColor = val === false ? "#ffdafc" : "#f991cc";
 
   return (
     <div className='p-4 w-full relative h-screen bg-zinc-200 flex justify-center items-center'>
@@ -52,7 +69,7 @@ function Cards() {
       </h1>
       {currentImageIndex === images.length - 1 && (
         <h1
-          className={`${val === false ? "text-[#FCE4DB]" : "text-[#f75590]"} text-center z-20 text-2xl rounded-full font-["Salita"] absolute bottom-[10%] lg:top-[40%] lg:text-2xl  lg:right-[4%]`}
+          className={`${val === false ? "text-[#FCE4DB]" : "text-[#f75590]"} text-center z-20 text-2xl rounded-full font-["Salita"] absolute bottom-[10%] lg:top-[40%] lg:text-2xl lg:right-[4%]`}
           style={{ textShadow: `2px 2px 5px ${shadowColor}, -2px -2px 5px ${shadowColor}` }}
         >
           Pehle jese the wese hojaye🫴 <br />
@@ -74,6 +91,7 @@ function Cards() {
           }`}
         >
           <FaHeart />
+          <Tooltip text="Click me" visible={showTooltip} backgroundColor={tooltipBackgroundColor} textColor={tooltipTextColor} />
         </span>
       </div>
     </div>
