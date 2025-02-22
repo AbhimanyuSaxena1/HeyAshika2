@@ -43,7 +43,7 @@ function Cards() {
         Palak
       </h1>
       <h1
-        className={`${val === false ? "text-[#FCE4DB]" : "text-[#f75590]"} z-20 text-4xl rounded-full font-["Salita"] absolute bottom-[20%] lg:top-[45%] lg:text-4xl lg:left-[10%]`}
+        className={`${val === false ? "text-[#FCE4DB]" : "text-[#f75590]"} z-20 text-4xl rounded-full font-["Salita"] absolute bottom-[15%] lg:top-[45%] lg:text-4xl lg:left-[10%]`}
       >
         I love you so much❤️
       </h1>
