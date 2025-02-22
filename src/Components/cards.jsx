@@ -69,11 +69,11 @@ function Cards() {
       </h1>
       {currentImageIndex === images.length - 1 && (
         <h1
-          className={`${val === false ? "text-[#FCE4DB]" : "text-[#f75590]"} text-center z-20 text-2xl rounded-full font-["Salita"] absolute bottom-[10%] lg:top-[40%] lg:text-2xl lg:right-[4%]`}
+          className={`${val === false ? "text-[#FCE4DB]" : "text-[#f75590]"} text-center z-20 text-2xl rounded-full font-["Salita"] absolute bottom-[8%] lg:top-[40%] lg:text-2xl lg:right-[4%]`}
           style={{ textShadow: `2px 2px 5px ${shadowColor}, -2px -2px 5px ${shadowColor}` }}
         >
           Pehle jese the wese hojaye🫴 <br />
-          please ajana mohmaya me wapas🥺
+          please ajana mohmaya me wapas meri🥺
         </h1>
       )}
       <div className={`rounded-xl w-75 h-100 ${val === false ? "border-[#f75590]" : "border-[#FCE4DB]"} border-6 border-dashed relative overflow-hidden flex justify-center items-center`} style={{ boxShadow: `0 0 15px 5px ${val === false ? '#FCE4DB' : '#f75590'}` }}>
