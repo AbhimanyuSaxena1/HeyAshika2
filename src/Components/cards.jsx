@@ -30,7 +30,7 @@ function Cards() {
         src={images[currentImageIndex]} 
         className='absolute h-full w-full object-cover blur-lg transition-all duration-1000' 
         alt="" 
-        style={{ filter: 'blur(10px)' }}
+        style={{ filter: 'blur(5px)' }}
       />
       <h1
         className={`${val === false ? "text-[#f75590]" : "text-[#FCE4DB]"} z-20 text-7xl stroke-black font-["Salita"] absolute top-[13%] lg:top-[20%] lg:text-8xl lg:left-[10%]`} 
